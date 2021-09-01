@@ -6,6 +6,7 @@ title: 이설란
 ## 소개
 
 JavaScript를 베이스로 한 프론트엔드 개발자
+
 레진엔터테인먼트 레진코믹스(https://www.lezhin.com) 서비스 웹 프론트 개발팀 팀원
 레진코믹스(https://www.lezhin.com) 삼국의 신규 피처 개발 및 전반적인 서비스 운영
 기존 레진 코믹스를 이루는 RoR 및 JavaScript 서비스 코드들을 신규 서비스 서버 및 React, TypeScript로
