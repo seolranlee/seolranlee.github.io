@@ -1,15 +1,15 @@
 ---
 layout: post
-title: 이설란
+title: 이력서
 ---
 
 ## 소개
 
 JavaScript를 베이스로 한 프론트엔드 개발자
 
-레진엔터테인먼트 레진코믹스(https://www.lezhin.com) 서비스 웹 프론트 개발팀 팀원
-레진코믹스(https://www.lezhin.com) 삼국의 신규 피처 개발 및 전반적인 서비스 운영
-기존 레진 코믹스를 이루는 RoR 및 JavaScript 서비스 코드들을 신규 서비스 서버 및 React, TypeScript로
+레진엔터테인먼트 [레진코믹스](https://www.lezhin.com){: target="_blank"} 서비스 웹 프론트 개발팀 팀원<br>
+레진코믹스 삼국의 신규 피처 개발 및 전반적인 서비스 운영
+기존 레진코믹스를 이루는 RoR 및 JavaScript 서비스 코드들을 신규 서비스 서버 및 React, TypeScript로
 전환하는 작업 진행중
 
 서비스 회사의 개발자는 서비스 컨텍스트에 대한 이해도가 기술 못지않게 중요하다고 생각합니다.
@@ -18,37 +18,177 @@ why에 대한 공유 등 피처 및 이슈 하나하나를 개별로 보는 것�
 파악하며 개발하려 노력합니다
 
 -----
+## 경력
 
-Poole is the butler for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@mdo](https://twitter.com/mdo) to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example layouts, pages, posts, and styles.
+### 레진엔터테인먼트
+프론트개발팀/팀원<br>*2020.7 - 재직중*
 
-This demo site was last updated {{ site.time | date: "%B %d, %Y" }}.
+> ###### (중장기) 레진코믹스 서비스 리액트 포팅
+*2021.7 - 진행중*
+* KR, US, JP 삼국 사업부의 개별화된 요구 조건을 반영하기 위한 다중 서비스 아키텍쳐 설계
+  - 기존 서비스의 페이지 또는 기능을 신규 서비스로 이관 및 개발하며
+  점진적으로 기존 Ruby on Rails,  JavaScript 서비스 코드들을 신규 서비스 서버 / React, TypeScript 로 전환하는 작업 진행중
 
-There are currently two themes built on Poole:
+> ###### 전화번호 수집 및 성인인증 마일스톤
+*2021.7 - 2021.8*
+* 내 정보에 휴대폰 관리 영역 추가
+  - 유저가 직접 휴대폰 번호 추가/삭제 가능
+* 한국 IP로 한국 로케일 레진 서비스에 접속한 성인 유저 중 성인인증 기간이 1년이 경과한 유저에 한하여 재인증 구현
+  - 유저 인증 정보를 관리하는 CC쿠키 로직 수정 및 추가
+* GA 구현 및 개발 완료 후 통합 테스트 / QA 대응
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+> ###### 결제페이지 리뉴얼 마일스톤
+*2021.6 - 2021.7*
+* 신규 유저 및 기존 유저들의 결제를 촉진 시키고 정기 결제를 지속적으로 유도하기 위한 결제(코인 충전) 페이지 개선 개발
+* 기존 상품 그룹의 순서들이 정적으로 배치되어 있던 구조에서 백오피스 관리 툴을 통해 서버에서 내려주는 순서대로 상품그룹을 노출시킬 수 있는 로직으로 개선
+* 상품에 타이머 기능을 추가시켜 판매 효과 촉진 기술 지원
+* GA 구현 및 개발 완료 후 통합 테스트 / QA 대응
 
-Learn more and contribute on [GitHub]({{ site.github.repo }}).
+> ###### 정보구조개선 마일스톤
+*2021.1*
+* 컨셉에 따라 작품을 그룹핑하여 제공할 수 있는 신규 추가 메뉴 화면 개발
+  - 레진코믹스 KR 로케일 기준 로맨스, 소년, 드라마, BL, 후방주의(성인전시메뉴)
+* 회원/비회원/관변경에 따른 성인 전시메뉴 진입 로직 구현
+* GA 구현 및 개발 완료 후 통합 테스트 / QA 대응
 
-## What's included
+> ###### 태그 마일스톤
+*2020.10*
+* 고객이 태그를 통하여 주도적으로 취향에 맞는 작품을 빠르게 찾을 수 있도록 태그 개선 마일스톤 진행
+* 에피소드 목록, 에피소드목록 > 작품 정보에 태그 정보 추가
+* 태그 상세 페이지 신규 개발
+* GA 구현 및 개발 완료 후 통합 테스트 / QA 대응
 
-Poole is a streamlined Jekyll site designed and built as a foundation for building more meaningful themes. Poole, and every theme built on it like this one, includes the following:
+### 디자인피버
+비주얼인터랙션디벨롭먼트/선임<br>*2017.8 - 2020.2*
 
-* Complete Jekyll setup included (layouts, config, [404]({{ '404.html' | relative_url }}), [RSS feed]({{ 'atom.xml' | relative_url }}), posts, [archive page]({{ 'archive' | relative_url }}), and [example page]({{ 'about' | relative_url }}))
-* Mobile friendly design and development
-* Easily scalable text and component sizing with `rem` units in the CSS
-* Support for a wide gamut of HTML elements
-* Related posts (time-based, because Jekyll) below each post
-* Syntax highlighting, courtesy Jekyll's built-in support for Rouge
+> ###### [디자인삼성](http://design.samsung.com){: target="_blank"} 운영
+*2017.8 - 2020.2*
+* 디자인 삼성의 약 50개의 컨텐츠 구축
+* HTML, CSS, JavaScript, SVG, Canvas, Shader 등 다양한 기술 활용
 
-Additional features are available in individual themes.
+> ###### 슈퍼셀 운영
+*2020.1 - 2020.2*
+* 클래시 로얄 및 클래시 오브 클랜 공식 KR 웹 페이지 운영
+* 슈퍼셀 내부 서비스의 다양한 이벤트 페이지 제작
+  - HTML, SCSS, JavaScript를 활용한 모션 구현
+  - Vue, Vuex를 활용하여 구현
 
-## Browser support
+> ###### [삼성 디벨로퍼](https://developer.samsung.com){: target="_blank"} 사이트 구축
+*2019.10 - 2020.2*
+* 삼성 개발자 사이트 리뉴얼 구축 서포트
+* Adobe XD 및 Bootstrap 사용
 
-Poole and its themes are by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), Firefox, and Edge.
 
-## Download
+> ###### [샌드박스 오피셜 사이트 구축](https://sandbox.co.kr){: target="_blank"} 사이트 구축
+*2019.4 - 2019.5*
+* 샌드박스 official site 구축 서포트
+* Vue.js로 구현
 
-These themes are developed on and hosted with GitHub. Head to the [GitHub repository]({{ site.github.repo }}) for downloads, bug reports, and features requests.
+> ###### [AIA 바이탈리티](http://dev.designfever.com/aia_vitality_inapp_mkt/index_A.html){: target="_blank"} 운영
+*2018.9 - 2018.12*
+* AIA 바이탈리티 이벤트 페이지 운영
+* 구글 애널리틱스 기술 활용
 
-Thanks!
+> ###### [디자인피버 공식홈페이지](http://www.designfever.com){: target="_blank"} 운영
+*2017.8 - 2020.2*
+* 디자인피버 공식홈페이지의 포트폴리오 컨텐츠 운영
+
+### 디지털다임
+UI개발실/사원<br>*2015.12 - 2017.7*
+
+> ###### [네이처리퍼블릭 국/중문 및 글로벌 사이트](https://www.naturerepublic.com){: target="_blank"} 리뉴얼 구축
+*2016.6 - 2017.1*
+* PC 국/중문 및 글로벌 사이트 메인 및 PC/Mobile 서브페이지 구축
+
+> ###### [풀무원 자회사 올가 홀푸드](http://www.orga.co.kr){: target="_blank"} 리뉴얼 구축
+*2015.12 - 2016.7*
+* 컨텐츠 위주의 PC/Mobile 서브 페이지 구축
+
+> ###### [도미노피자](https://dominos.co.kr){: target="_blank"} 리뉴얼 구축
+*2016.9 - 2017.2*
+* PC/Mobile 내 정보 페이지 및 서브페이지 구축
+
+> ###### [디지털다임 자사 서비스 트립앤바이제주](http://jeju.tripnbuy.com){: target="_blank"} 모바일 웹 구축
+*2017.1 - 2017.7*
+* Mobile 서브페이지 구축
+
+### 개인프로젝트
+
+> ###### [참조관계를 지닌 할 일 리스트](https://github.com/seolranlee/react-todo-webapp){: target="_blank"} 구현
+*2020.4*
+* React.js로 Todo Web App을 구현
+* 기본적인 Todo Web App이지만 참조 관계를 지닐 수 있다는것이 주요 특징
+* 기본적인 CRUD를 바탕으로 페이지네이션, 업로드, 다운로드, 기간 완료/미완료 여부, 키워드 검색 및 검색 후 재정렬 기능 구현
+* 백엔드는 MySQL, Node, Express, Sequelize를 사용
+* 프론트는 React.js, 스타일링은 Semantic UI React를 사용
+
+> ###### [뉴스뷰어](https://github.com/seolranlee/fc-react-7/tree/master/news-viewer){: target="_blank"} 구현
+*2019.10*
+* 외부 API(news api)를 조회하여 최신 뉴스들을 카테고리 항목별로 분류하여 표현하는 뉴스 뷰어 프로젝트 구현
+* React.js, Styled Components, axios, React Router, Proxy등을 사용
+
+> ###### [CRUD with Auth](https://github.com/seolranlee/CRUD-with-Auth){: target="_blank"} 구현
+*2018.11*
+* Nodejs, express를 사용하여 CRUD기능이 구현된 웹 어플리케이션 구현
+* MySQL로 백엔드 개발
+* 로그인과 회원가입 기능 구현
+* passport로 페이스북 로그인 연동 구현.
+> ###### [디지털다임 자사 서비스 트립앤바이제주](http://jeju.tripnbuy.com){: target="_blank"} 모바일 웹 구축
+*2017.1 - 2017.7*
++ Mobile 서브페이지 구축
+
+-----
+## 기술
+
+### HTML/CSS
+* 시맨틱 마크업을 준수합니다.
+* SASS(SCSS)와 같은 CSS Preprocessor를 사용할 수 있습니다.
+* 크로스 브라우징을 지원하는 앱을 구현할 수 있습니다.
+* CSS의 transition등을 활용하여 세련된 인터랙티브 웹을 구현하는 데 익숙합니다.
+
+### JavaScript
+* ES2015 이후의 JavaScript 문법에 익숙합니다.
+* Vanilla JavaScript를 통해 DOM을 다루는데 익숙합니다.
+* `.reduce`, `.map`과 같은 함수로 데이터를 다루는데에 익숙합니다.
+* 비동기 작업을 하는데 익숙합니다. (promise, async await)
+
+### TypeScript
+* TypeScript를 베이스로 한 React 코드를 구현할 수 있습니다.
+* Generic 문법을 활용할 수 있습니다.
+
+### SPA Framework
+* Vue.js를 활용하여 웹 페이지를 서빙한 경험이 있습니다.
+* React를 베이스로 한 프로젝트를 진행중에 있습니다.
+* React의 내장 훅과 커스텀 훅을 작성할 수 있습니다.
+* Vuex, Mobx와 같은 상태 관리 라이브러리/프레임 워크를 사용한 경험이 있습니다.
+
+### Ruby on Rails
+* RoR 코드의 흐름을 이해할 수 있습니다.
+* MVC패턴을 이해하고 모델, 뷰, 컨트롤러의 역할에 맞게 코드를 작성 및 수정할 수 있습니다.
+* 라우트를 작성할 수 있습니다.
+
+### GA
+* GA를 강도 높게 활용하는 팀에서 업무한 경험이 있습니다.
+* GA의 다양한 이벤트 태깅의 역할을 의미에 맞게 정의하고 코드에 적용한 경험이 있습니다.
+* 애널리틱스 360의 GA Report 지표를 읽고 해석한 경험이 있습니다.
+
+### GIT
+* git flow를 적용하여 업무한 경험이 있습니다.
+* 충돌을 해결할 수 있습니다.
+* PR/MR을 통해 코드 리뷰를 한 경험이 있습니다.
+
+### 그 외
+* AWS ECS를 통한 배포 및 롤백의 경험이 있습니다.
+* RestAPI의 의미를 알고 Express를 활용하여 RESTful API를 작성한 경험이 있습니다.
+
+-----
+## 취미
+### 웹페이지 구현
+* 인터랙션 및 비쥬얼적인 요소가 들어가는 웹페이지 구현에 흥미가 높습니다.
+* 초등학생때에는 좋아하던 게임의 정보 및 커뮤니티 페이지, 중/고등학생 때에는 좋아하는 아이돌의 팬 페이지, 그리고 팬 페이지 리퀘스트를 받는 홈페이지 제작 사이트를 운영한 경험이 있습니다.
+
+### 브런치 글 읽기
+* 다양한 토픽 및 관심사에 대한 글을 읽는 것을 좋아합니다. 이를 통해 정보를 얻는 걸 즐깁니다.
+
+### 영상시청
+* 넷플릭스, 왓챠와 같은 OTT매체를 좋아합니다. 넷플릭스에 컨텐츠는 많은 데 뭘 봐야할지 모르겠다는 말을 잘 이해하지 못합니다. 대체로 5분에서 10분 내에 무엇을 보고싶은 지 결정할 수 있고, 영상 컨텐츠를 통해 폭넓고 다양한 간접적인 경험을 하는 것을 즐깁니다.
