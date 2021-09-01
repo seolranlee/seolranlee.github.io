@@ -1,9 +1,20 @@
 ---
 layout: post
-title: Introduction
+title: 이설란
 ---
 
-*The Strange Case of Dr. Jekyll and Mr. Hyde* tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel's supporting cast is a man by the name of Mr. Poole, Dr. Jekyll's loyal butler.
+## 소개
+
+JavaScript를 베이스로 한 프론트엔드 개발자
+레진엔터테인먼트 레진코믹스(https://www.lezhin.com) 서비스 웹 프론트 개발팀 팀원
+레진코믹스(https://www.lezhin.com) 삼국의 신규 피처 개발 및 전반적인 서비스 운영
+기존 레진 코믹스를 이루는 RoR 및 JavaScript 서비스 코드들을 신규 서비스 서버 및 React, TypeScript로
+전환하는 작업 진행중
+
+서비스 회사의 개발자는 서비스 컨텍스트에 대한 이해도가 기술 못지않게 중요하다고 생각합니다.
+신규 피처 개발 및 서비스 운영 중 발생하는 다양한 이슈를 마주함에 있어서 관련 백그라운드 및 레거시,
+why에 대한 공유 등 피처 및 이슈 하나하나를 개별로 보는 것이 아닌 요소들 간의 유기적 연관성을
+파악하며 개발하려 노력합니다
 
 -----
 
