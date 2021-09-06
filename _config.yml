@@ -6,6 +6,7 @@ paginate: 1
 baseurl: ""
 permalink: pretty
 locale: ko_KR
+description: 웹 프론트엔드 개발자 이설란의 웹 사이트
 # Gems
 plugins:
   - jekyll-gist
