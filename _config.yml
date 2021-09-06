@@ -5,7 +5,7 @@ url: https://seolranlee.github.io
 paginate: 1
 baseurl: ""
 permalink: pretty
-
+locale: ko_KR
 # Gems
 plugins:
   - jekyll-gist
@@ -33,9 +33,18 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name: Seolran Lee
+  url: https://github.com/seolranlee
+  email: leesugar90@gmail.com
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: assets/share_thumb_300x300.png
+        height: 300
+        width: 300
 
 # Custom vars
 version: 3.0.0
