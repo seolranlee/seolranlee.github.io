@@ -124,7 +124,7 @@ UI개발실/사원<br>*2015.12 - 2017.7*
 * 백엔드는 MySQL, Node, Express, Sequelize를 사용
 * 프론트는 React.js, 스타일링은 Semantic UI React를 사용
 
-> ###### [뉴스뷰어](https://github.com/seolranlee/fc-react-7/tree/master/news-viewer){: target="_blank"} 구현
+> ###### [뉴스뷰어](https://github.com/seolranlee/news-viewer){: target="_blank"} 구현
 *2019.10*
 * 외부 API(news API)를 조회하여 최신 뉴스들을 카테고리 항목별로 분류하여 표현하는 뉴스 뷰어 프로젝트 구현
 * React, Styled Components, axios, React Router, Proxy등을 사용
