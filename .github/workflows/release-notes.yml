@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+  repository_dispatch:
+    types:
+      - webhook
 
 jobs:
   update_release_draft:
