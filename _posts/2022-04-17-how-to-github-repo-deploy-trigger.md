@@ -85,7 +85,7 @@ on:
 ## 최종 구현 흐름
 
 <p align="center">
-  <img src="https://blog.kakaocdn.net/dn/bH2Nmw/btrzzXV3afM/8KAqNqBCT8UPYgZL8ocBUK/img.jpg" alt="최종 구현 흐름">
+  <img src="https://blog.kakaocdn.net/dn/KUx60/btrzAU6MV5E/Hdx1XEdfiVaVUQzETklxc0/img.jpg" alt="최종 구현 흐름">
 </p>
 
 최종적으로 구현된 흐름은 이렇다.
