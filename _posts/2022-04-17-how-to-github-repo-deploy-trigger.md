@@ -29,7 +29,7 @@ title: github rest api를 이용해 배포 트리거하기
 
 이 즈음에서 고민이 된 부분은 백오피스에서 어떻게 블로그 레포에 <b>‘지금 작성자나 포스트가 변경되었으니 배포가 필요해!’</b>라고 알려줄 것인가 였다. 이 부분은 이전에 사내 블로그 구축을 담당했던 다른 팀원분의 도움을 받았는데, github에서 제공해주는 rest api가 있었다. (이런게 있는줄은 처음알았다.. 없는 게 없는 github..)
 
-github rest api의 공식 문서를 보니, ****Create a repository dispatch event**** 라는 단락이 있었는데 이것이 내가 원하던 구현 방향성에 대한 스펙이었다.
+github rest api의 공식 문서를 보니, <b>Create a repository dispatch event</b> 라는 단락이 있었는데 이것이 내가 원하던 구현 방향성에 대한 스펙이었다.
 
 [https://docs.github.com/en/rest/reference/repos#create-a-repository-dispatch-event](https://docs.github.com/en/rest/reference/repos#create-a-repository-dispatch-event)
 
@@ -53,7 +53,7 @@ curl \
 }
 ```
 
-권한 관련 문제라고 생각하고 로컬에 내 github에 대한 정보를 (username, personal access token)등을 주입하는 등의 시도를 해도 계속 404가 떨어졌다. 이리저리 찾아보니 해당 POST 요청 header에 `Authorization`값이 필요했다. 헤더에 이를 함께 보내주지 않아 권한 에러가 떨어졌던 것..
+권한 관련 문제라고 생각하고 로컬에 내 github에 대한 정보를 (username, personal access token) 주입하는 등의 시도를 해도 계속 404가 떨어졌다. 이리저리 찾아보니 해당 POST 요청 header에 `Authorization`값이 필요했다. 헤더에 이를 함께 보내주지 않아 권한 에러가 떨어졌던 것..
 
 `Authorization: token ${GITHUB_PERSONAL_ACCESS_TOKEN`
 
@@ -88,10 +88,17 @@ on:
   <img src="https://blog.kakaocdn.net/dn/bH2Nmw/btrzzXV3afM/8KAqNqBCT8UPYgZL8ocBUK/img.jpg" alt="최종 구현 흐름">
 </p>
 
-결론적으로 구현한 내용은 이렇다.
+결론적으로 구현된 흐름을 이렇다.
 
 1. 백오피스에서 블로그의 작성자나, 포스팅을 생성, 삭제, 편집한다.
-2. aws s3 API를 이용해 s3의 파일을 CRUD한다. 동시에 github rest API를 이용해 github blog 레포에 배포를 트리거한다.
+2. aws s3 API를 이용해 s3의 파일을 CRUD한다. 동시에 (엄밀히 말하자면 s3 API 콜 이후에) github rest API를 이용해 github blog 레포에 배포를 트리거한다. 코드로 보면 이렇게 되겠다.
+```javascript
+async insertAuthor(author) {
+    const endpoint = '/blog/authors';
+    await axios.post(endpoint, data); // aws s3 api 콜
+    this.deploy();  // POST dispatch event
+  }
+```
 3. 배포가 완료되면 변경사항이 사용자와의 접점에 있는 블로그 서비스 페이지에 정상적으로 반영된다.
 
 ## 끝으로
