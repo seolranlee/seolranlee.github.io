@@ -3,6 +3,7 @@ layout: post
 title: github rest api를 이용해 배포 트리거하기
 ---
 
+
 ## 필요하게 된 이유
 
 최근 새로운 회사로 이직을 하게 되면서 온보딩 과제로 사내 블로그 구축 업무를 맡게 되었다. 
@@ -12,7 +13,10 @@ title: github rest api를 이용해 배포 트리거하기
 
 ## 구현 전 블로그의 구조
 내가 온보딩 과제를 마주한 시점의 블로그는 다음과 같은 구조를 지니고 있었다.
-![블로그의 구조](../assets/posts/2022-04-17-01.jpeg)
+
+<p align="center">
+  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIcGFq%2Fbtrzyah9cGu%2FbBz9acT8SORWpKbYTFUlKK%2Fimg.jpg" alt="블로그의 구조">
+</p>
 
 블로그의 작성자, 포스트는 aws s3에서 개별의 파일로 관리되고 있었고 사용자에게 보여지는 블로그에서는 이 s3의 파일들을 aws s3 api를 이용해 GET정도만 해와서 뿌려주는 형태였다. 또한 s3 파일에 변경이 일어난다고 해도 blog repo의 deploy는 로컬에서 blog repo의 master에 푸쉬를 해주거나 manual 배포 등의 액션만으로 트리거 되고 있는 상태였기 때문에 s3파일의 변경과는 무관한 일이었다. 즉 실질적으로 s3 파일의 변경과 blog 서비스 사이에는 아무런 연결고리가 없는 상태였다. (누군가 수동으로 액션을 해주지 않는 이상)
 
@@ -79,7 +83,10 @@ on:
 ```
 
 ## 최종 구현 흐름
-![최종 구현 흐름](../assets/posts/2022-04-17-02.jpeg)
+
+<p align="center">
+  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbsoQPG%2Fbtrzx9p4nzC%2Fb0U30xBbvU6f7TZzpGwVAK%2Fimg.jpg" alt="최종 구현 흐름">
+</p>
 
 결론적으로 구현한 내용은 이렇다.
 
