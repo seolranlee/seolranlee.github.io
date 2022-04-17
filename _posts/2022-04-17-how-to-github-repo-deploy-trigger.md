@@ -25,7 +25,7 @@ title: github rest api를 이용해 배포 트리거하기
 (해당 사내 블로그는 기술 블로그의 성격에 국한되지 않고 사내의 모든 직종의 직원분들이 다양한 주제와 토픽으로 포스팅을 할 공간이었기 때문에 개발자 친화적인 관리는 지양되었고, 사내 직원 누구나 접근 가능한 백오피스에서 포스트 및 작성자의 관리가 가능해야 했다.)
 
 
-## 구현해야 할 방향성
+## 구현방향
 
 이 즈음에서 고민이 된 부분은 백오피스에서 어떻게 블로그 레포에 <b>‘지금 작성자나 포스트가 변경되었으니 배포가 필요해!’</b>라고 알려줄 것인가 였다. 이 부분은 이전에 사내 블로그 구축을 담당했던 다른 팀원분의 도움을 받았는데, github에서 제공해주는 rest api가 있었다. (이런게 있는줄은 처음알았다.. 없는 게 없는 github..)
 
@@ -33,9 +33,9 @@ github rest api의 공식 문서를 보니, <b>Create a repository dispatch even
 
 [https://docs.github.com/en/rest/reference/repos#create-a-repository-dispatch-event](https://docs.github.com/en/rest/reference/repos#create-a-repository-dispatch-event)
 
-이를 활용하면 외부에서 일어나는 활동(나의 경우에는 백오피스에서의 작성자 및 포스트의 CRUD일 것이다)이 특정 깃헙 레포의 액션(***.github.io의 배포를)을 트리거 할 수 있었다. 이렇게 되면 s3 파일에서 authors와 posts의 변경점이 생길때 마다 ***.github.io의 배포가 트리거 되기 때문에 사용자와의 접점에 있는 블로그 서비스가 변경사항을 즉각적으로 반영할 수 있게 된다.
+이를 활용하면 외부에서 일어나는 활동(나의 경우에는 백오피스에서의 작성자 및 포스트의 CRUD일 것이다)이 특정 깃헙 레포의 액션(github.io의 배포를)을 트리거 할 수 있었다. 이렇게 되면 s3 파일에서 authors와 posts의 변경점이 생길때 마다 github.io의 배포가 트리거 되기 때문에 사용자와의 접점에 있는 블로그 서비스가 변경사항을 즉각적으로 반영할 수 있게 된다.
 
-## 404 Bad credentials
+## 마주한 문제
 그런데 어쩐 이유에서인지 해당 문서의 cURL에 따라
 ```shell
 curl \
@@ -57,7 +57,7 @@ curl \
 
 `Authorization: token ${GITHUB_PERSONAL_ACCESS_TOKEN`
 
-여기서 `GITHUB_PERSONAL_ACCESS_TOKEN`은 생성시 `admin:repo_hook, repo, workflow` 권한이 있어야 하고, 배포 트리거를 걸 레포(나의 경우는 ***.github.io의 레포)에 초대된 계정의 access token이어야 한다. 나의 경우에는 개인 블로그가 아니라 사내 블로그였기 때문에, 플랫폼 챕터의 도움을 받아 개발팀이 공용으로 관리할 목적으로 access token을 발급받아 이를 사용하였다.
+여기서 `GITHUB_PERSONAL_ACCESS_TOKEN`은 생성시 `admin:repo_hook, repo, workflow` 권한이 있어야 하고, 배포 트리거를 걸 레포(나의 경우는 github.io의 레포)에 초대된 계정의 access token이어야 한다. 나의 경우에는 개인 블로그가 아니라 사내 블로그였기 때문에, 플랫폼 챕터의 도움을 받아 개발팀이 공용으로 관리할 목적으로 access token을 발급받아 이를 사용하였다.
 
 그리하여 최종적인 백오피스에서의 POST요청은 이렇게 구현하였다.
 ```shell
@@ -88,7 +88,7 @@ on:
   <img src="https://blog.kakaocdn.net/dn/bH2Nmw/btrzzXV3afM/8KAqNqBCT8UPYgZL8ocBUK/img.jpg" alt="최종 구현 흐름">
 </p>
 
-결론적으로 구현된 흐름을 이렇다.
+최종적으로 구현된 흐름은 이렇다.
 
 1. 백오피스에서 블로그의 작성자나, 포스팅을 생성, 삭제, 편집한다.
 2. aws s3 API를 이용해 s3의 파일을 CRUD한다. 동시에 (엄밀히 말하자면 s3 API 콜 이후에) github rest API를 이용해 github blog 레포에 배포를 트리거한다. 코드로 보면 이렇게 되겠다.
