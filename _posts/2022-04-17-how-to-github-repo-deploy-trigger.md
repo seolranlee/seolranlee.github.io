@@ -94,10 +94,10 @@ on:
 2. aws s3 API를 이용해 s3의 파일을 CRUD한다. 동시에 (엄밀히 말하자면 s3 API 콜 이후에) github rest API를 이용해 github blog 레포에 배포를 트리거한다. 코드로 보면 이렇게 되겠다.
 ```javascript
 async insertAuthor(author) {
-    const endpoint = '/blog/authors';
-    await axios.post(endpoint, data); // aws s3 api 콜
-    this.deploy();  // POST dispatch event
-  }
+  const endpoint = '/blog/authors';
+  await axios.post(endpoint, data); // aws s3 api 콜
+  this.deploy();  // POST dispatch event
+}
 ```
 3. 배포가 완료되면 변경사항이 사용자와의 접점에 있는 블로그 서비스 페이지에 정상적으로 반영된다.
 
