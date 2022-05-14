@@ -154,11 +154,11 @@ export default App;
 
 ### AbortController를 활용하여 비동기 작업취소하기
 
-axios가 아닌 비동기가 api를 활용하여 비동기 작업을 했을 경우에도 비동기 작업을 취소하고 싶어지는 상황이 발생할 수 있다. (이번 포스팅에서는 대표적으로 Fetch api를 예를 들어 작성해보겠다.)
+axios가 아닌 비동기가 api를 활용하여 비동기 작업을 했을 경우에도 비동기 작업을 취소하고 싶어지는 상황이 발생할 수 있다. (이번 포스팅에서는 대표적으로 `fetch` api를 예를 들어 작성해보겠다.)
 
-이를 위해 DOM에서 범용적으로 사용 가능한 [AbortController](https://developer.mozilla.org/ko/docs/Web/API/AbortController)를 활용하여 비동기 요청을 취소해보겠다. (MDN 문서를 확인하면 알수 있듯이 AbortController는 fetch요청을 비롯한 모든 DOM 요청을 취소할 수 있다.)
+이를 위해 DOM에서 범용적으로 사용 가능한 [AbortController](https://developer.mozilla.org/ko/docs/Web/API/AbortController)를 활용하여 비동기 요청을 취소해보겠다. (MDN 문서를 확인하면 알수 있듯이 `AbortController`는 `fetch` api요청을 비롯한 모든 DOM 요청을 취소할 수 있다.)
 
-AbortController를 이전 예제 코드에 적용하면 이렇게 될 수 있겠다.
+`AbortController`를 이전 예제 코드에 적용하면 이렇게 될 수 있겠다.
 
 ```jsx
 import { useState, useEffect, useRef } from "react";
@@ -204,9 +204,9 @@ const App = () => {
 
 export default App;
 ```
-이번 포스팅을 작성하며 알게 된 사실인데, axios의 CancelToken을 이용한 비동기 요청 취소 로직과 AbortController를 활용하여 비동기 요청을 취소하는 로직이 크게 다르지 않아 막연히 axios의 CancelToken이 내부적으로 AbortController 기반으로 구현되지 않았을까? 라고 생각했는데 axios의 CancelToken은 이미 deprecated된 스펙이었다. (https://axios-http.com/docs/cancellation 참고. v0.22.0 이후부터는 AbortController를 권장한다는 내용)
+이번 포스팅을 작성하며 알게 된 사실인데, axios의 `CancelToken`을 이용한 비동기 요청 취소 로직과 `AbortController를` 활용하여 비동기 요청을 취소하는 로직이 크게 다르지 않아 막연히 axios의 `CancelToken`이 내부적으로 `AbortController` 기반으로 구현되지 않았을까? 라고 생각했는데 axios의 `CancelToken`은 이미 deprecated된 스펙이었다. ([https://axios-http.com/docs/cancellation](https://axios-http.com/docs/cancellation) 참고. `v0.22.0` 이후부터는 `AbortController`를 권장한다는 내용)
 
-그리하여 axios에 CancelToken이 아닌 AbortController를 적용한다면 axios에 대한 예제 코드가 최종적으로 이렇게 변하게 되겠다.
+그리하여 axios에 `CancelToken`이 아닌 `AbortController`를 적용한다면 axios에 대한 예제 코드가 최종적으로 이렇게 변하게 되겠다.
 
 ```jsx
 import axios from "axios";
