@@ -81,7 +81,6 @@ export default App;
 
 해당 코드는 https://jsonplaceholder.typicode.com/todos/1 api를 호출하여 todo 하나를 가져오는 정말로 아주아주 간단한 코드이다. 여기에 임의로 https://jsonplaceholder.typicode.com/* 에 대응되는 모든 api를 Throttler 걸어준다. (네트워크 요청을 설정해준 시간동안 모두 pending상태로 해준다.)
 
-
 <p align="center">
   <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FwOhBj%2FbtrB8P1FVCZ%2FWQhnUCRz5oNuFRH4zQS6K1%2Fimg.png" alt="URL Throttler">
 </p>
@@ -89,9 +88,8 @@ export default App;
 pending 되는 시간은 2초정도로 설정해두었다.
 
 
-<p align="center">
-  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fz0PZV%2FbtrB6uqXEcI%2F0tIH9kReQVPzPtSQ7eqexk%2Fimg.png" alt="network pending">
-</p>
+[ ![network pending](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fz0PZV%2FbtrB6uqXEcI%2F0tIH9kReQVPzPtSQ7eqexk%2Fimg.png) ](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fz0PZV%2FbtrB6uqXEcI%2F0tIH9kReQVPzPtSQ7eqexk%2Fimg.png)
+
 
 동일한 네트워크 요청에 대해서 쌓이고 있는 pending들을 볼 수 있다. 게다가 해당 요청들이 2초를 넘긴후 차례대로 응답값이 오게되면 불필요한 돔 리렌더링도 반복적으로 발생하게 된다. (`useEffect`의 `console.log('todo change')`가 반복적으로 찍히는 것을 보면 알 수 있다.) 
 
@@ -259,11 +257,10 @@ export default App;
 ```
 
 
-### 다음 버튼 행동 시 이전 네트워크 요청 취소 로직 적용 후**
+### 다음 버튼 행동 시 이전 네트워크 요청 취소 로직 적용 후
 
-<p align="center">
-  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbWvQeG%2FbtrB67hH5ZW%2FUwnsAtIzDpLOMTrfJHIRv1%2Fimg.png">
-</p>
+[ ![after](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbWvQeG%2FbtrB67hH5ZW%2FUwnsAtIzDpLOMTrfJHIRv1%2Fimg.png) ](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbWvQeG%2FbtrB67hH5ZW%2FUwnsAtIzDpLOMTrfJHIRv1%2Fimg.png)
+
 
 불필요한 이전 요청들이 모두 취소된 걸 볼 수 있다. 더불어 불필요한 돔 리렌더링도 일어나지 않는다. 
 
