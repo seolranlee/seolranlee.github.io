@@ -40,7 +40,7 @@ title: 비동기 요청 취소하기
 예제코드는 빠르게 CRA로 만들어보았고, api는 [jsonplaceholder](https://jsonplaceholder.typicode.com/), 그리고 임의로 네트워크의 장애 상황을 구현하기 위해 크롬 익스텐션인 [URL Throttler](https://chrome.google.com/webstore/detail/url-throttler/kpkeghonflnkockcnaegmphgdldfnden?hl=en)를 사용하였다.
 
 
-```javascript
+```js
 import axios from "axios";
 import { useEffect, useState } from "react";
 const App = () => {
@@ -106,7 +106,7 @@ pending 되는 시간은 2초정도로 설정해두었다.
 
 상기 예제코드에 이를 적용해 보면 이렇게 되겠다.
 
-```javascript
+```js
 import axios from "axios";
 import { useState, useRef, useEffect } from "react";
 const App = () => {
@@ -162,7 +162,7 @@ axios가 아닌 비동기가 api를 활용하여 비동기 작업을 했을 경�
 
 AbortController를 이전 예제 코드에 적용하면 이렇게 될 수 있겠다.
 
-```javascript
+```js
 import { useState, useEffect, useRef } from "react";
 const App = () => {
   const [todo, setTodo] = useState(null)
@@ -208,9 +208,9 @@ export default App;
 ```
 이번 포스팅을 작성하며 알게 된 사실인데, axios의 CancelToken을 이용한 비동기 요청 취소 로직과 AbortController를 활용하여 비동기 요청을 취소하는 로직이 크게 다르지 않아 막연히 axios의 CancelToken이 내부적으로 AbortController 기반으로 구현되지 않았을까? 라고 생각했는데 axios의 CancelToken은 이미 deprecated된 스펙이었다. (https://axios-http.com/docs/cancellation 참고. v0.22.0 이후부터는 AbortController를 권장한다는 내용)
 
-그리하여 axios에 CancelToken이 아닌 AbortController를 적용한다면 axios에 대한 예제 코드가 최종적으로 이렇게 변하게 되겠다.
+그리하여 axios에 CancelToken이 아닌 AbortController를 적용한다면 axios에 대한 예제 코드가 최종적으로 이렇게 적용되게 되겠다.
 
-```javascript
+```js
 import axios from "axios";
 import { useState, useRef, useEffect } from "react";
 const App = () => {
