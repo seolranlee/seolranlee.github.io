@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Archive
+title: 아카이브 - 이설란 - 웹프론트엔드 개발자
 ---
 
-# Archive
+# 아카이브
 
 Browse all posts by month and year.
 

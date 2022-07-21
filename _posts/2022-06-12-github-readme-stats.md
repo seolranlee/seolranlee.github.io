@@ -11,8 +11,6 @@ title: github readme 페이지에 유의미한 데이터 노출하기
 그런데 막상 이 필요성에 대해 생각해보니, 나의 github 페이지 메인에 나의 코딩 활동에 대한 아무런 정보가 없고 단지 저장소들만 나열되어있는 상태라면, 타인이 나의 github 페이지 엔트리를 통해 내가 어떤 활동을 하고 있는지, 어떤 언어를 주력으로 개발하고 있는 개발자인지 단번에 알기 힘들겠다는 생각이 들었다.
 
 그리하여 이번 기회를 통해 팀장님이 보내주신 자료와 몇가지 서치를 통해 나만의 github readme를 구현하게 되었다.
-
-<br/>
 ## README에 유의미한 데이터 노출하기
 
 이번에 개선을 진행한 [나의 github readme](https://github.com/seolranlee/seolranlee/blob/main/README.md)기반으로 게시글을 작성해 보도록 하겠다.
@@ -56,7 +54,9 @@ gtihub readme를 꾸미는 방법에는 여러가지가 있는데, 그 중 나�
 
 - 코드
 
-```![Seolranlee's GitHub stats](https://github-readme-stats.vercel.app/api?username=seolranlee)```
+```
+![Seolranlee's GitHub stats](https://github-readme-stats.vercel.app/api?username=seolranlee
+```
 
 - 실제 표현되는 화면
 
@@ -68,7 +68,9 @@ gtihub readme를 꾸미는 방법에는 여러가지가 있는데, 그 중 나�
 
 - 코드
 
-```![Seolranlee's GitHub stats](https://github-readme-stats.vercel.app/api?username=seolranlee&count_private=true)```
+```
+![Seolranlee's GitHub stats](https://github-readme-stats.vercel.app/api?username=seolranlee&count_private=true)
+```
 
 - 실제 표현되는 화면
 
@@ -84,7 +86,9 @@ gtihub readme를 꾸미는 방법에는 여러가지가 있는데, 그 중 나�
 
 - 코드
 
-```![Seolranlee's GitHub stats](https://github-readme-stats.vercel.app/api?username=seolranlee&show_icons=true)```
+```
+![Seolranlee's GitHub stats](https://github-readme-stats.vercel.app/api?username=seolranlee&show_icons=true)
+```
 
 - 실제 표현되는 화면
 
@@ -99,7 +103,9 @@ gtihub readme를 꾸미는 방법에는 여러가지가 있는데, 그 중 나�
 
 - 코드
 
-```![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seolranlee)```
+```
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seolranlee)
+```
 
 
 - 실제 표현되는 화면
@@ -114,7 +120,9 @@ gtihub readme를 꾸미는 방법에는 여러가지가 있는데, 그 중 나�
 
 - 코드
 
-```![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seolranlee&exclude_repo=board,study,lesson)```
+```
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seolranlee&exclude_repo=board,study,lesson)
+```
 
 - 실제 표현되는 화면
 
@@ -128,7 +136,9 @@ gtihub readme를 꾸미는 방법에는 여러가지가 있는데, 그 중 나�
 
 - 코드
 
-```![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seolranlee&hide=html,php)```
+```
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seolranlee&hide=html,php)
+```
 
 - 실제 표현되는 화면
 
@@ -143,7 +153,9 @@ gtihub readme를 꾸미는 방법에는 여러가지가 있는데, 그 중 나�
 
 - 코드
 
-```![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seolranlee&layout=compact)```
+```
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seolranlee&layout=compact)
+```
 
 - 실제 표현되는 화면
 
@@ -157,7 +169,7 @@ gtihub readme를 꾸미는 방법에는 여러가지가 있는데, 그 중 나�
 
 - 코드
 
-```markdown
+```
 ![Seolran's GitHub stats](https://github-readme-stats.vercel.app/api?username=seolranlee&count_private=true&show_icons=true&theme=onedark)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seolranlee&theme=onedark)
 ```
@@ -173,8 +185,6 @@ gtihub readme를 꾸미는 방법에는 여러가지가 있는데, 그 중 나�
 
 https://hits.seeyoufarm.com/ 에서 카운터의 색상 및 스타일 등을 지정한 뒤 생성되는 코드를 README.md문서에 붙여넣으면 된다. 
 
-<br/>
-
 ## 완성
 
 <p align="center">
@@ -186,8 +196,6 @@ https://hits.seeyoufarm.com/ 에서 카운터의 색상 및 스타일 등을 지
 
 해당 포스팅에 작성한 것들 이외에도 다양한 커스터마이징 방법이 공식 문서에 소개되어 있으니 조금 더 다양한 방식으로의 확장 및 변형을 원하시는 분들이 있다면 참고하면 좋을 듯 하다.
 ([커스터마이징](https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_kr.md#%EC%BB%A4%EC%8A%A4%ED%84%B0%EB%A7%88%EC%9D%B4%EC%A7%95) 섹션에서 조금 더 자세히 확인이 가능하다.)
-
-<br/>
 
 ## 참고목록
 - [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_kr.md)

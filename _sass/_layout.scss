@@ -8,9 +8,74 @@
   padding-right: var(--spacer-2);
   margin-left:  auto;
   margin-right: auto;
+  header {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    * {
+      margin: 0;
+    }
+    .masthead-title {
+      margin: 0;
+      // align-self: center;
+    }
+    .nav-list {
+      // align-self: center;
+      ul {
+        display: flex;
+        gap: 0 1rem;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  
 }
 
 footer {
   margin-top: var(--spacer-3);
   margin-bottom: var(--spacer-3);
+}
+
+
+// 이력서
+.resume {
+  .container {
+    display: flex;
+    padding: 0;
+    gap: 0 1rem;
+  }
+  dl, dt, dd {margin: 0;}
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    width: 40%;
+    padding-bottom: 2rem;
+    h2{
+      margin: 0;
+    }
+  }
+  
+  .title {
+    position: sticky;
+    top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    h3 {
+      margin: 0;
+    }
+  }  
 }
