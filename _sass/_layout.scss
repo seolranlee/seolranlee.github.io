@@ -10,20 +10,18 @@
   margin-right: auto;
   header {
     margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     * {
       margin: 0;
+      padding: 0;
     }
     .masthead-title {
       margin: 0;
-      // align-self: center;
     }
     .nav-list {
-      // align-self: center;
+      margin-top: 1rem;
       ul {
         display: flex;
+        justify-content: end;
         gap: 0 1rem;
         li {
           list-style: none;
@@ -35,7 +33,22 @@
       }
     }
   }
-  
+  @media (min-width: 30em) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      * {
+        margin: 0;
+      }
+      .masthead-title {
+        margin: 0;
+      }
+      .nav-list {
+        margin: 0;
+      }
+    }
+  }
 }
 
 footer {
