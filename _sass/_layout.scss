@@ -3,7 +3,7 @@
 // Styles for managing the structural hierarchy of the site.
 
 .container {
-  max-width: 45rem;
+  max-width: 55rem;
   padding-left: var(--spacer-2);
   padding-right: var(--spacer-2);
   margin-left:  auto;
@@ -63,8 +63,8 @@ footer {
     display: flex;
     padding: 0;
     gap: 0 1rem;
+    margin-bottom: 5rem;
   }
-  dl, dt, dd {margin: 0;}
   .left {
     display: flex;
     flex-direction: column;
@@ -80,15 +80,55 @@ footer {
   .title {
     position: sticky;
     top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
   }
   .right {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
+    > dl{
+      margin: 0;
+      &:not(:first-child) {
+        margin-top: 3rem;
+      }
+      > dt { margin: 0; }
+      > dd { 
+        margin: 0;
+        dl {
+          * {
+            display: list-item;
+            list-style: circle;
+          }
+          dt {
+            font-weight: normal;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
     h3 {
       margin: 0;
     }
-  }  
+  }
+  
+  .tech {
+    
+    dl, dt, dd {
+      margin: 0;
+      dt { 
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      dd {
+        display: list-item;
+        list-style: circle;
+        line-height: 2;
+        margin-left: 1rem;
+      }
+    }
+    dl:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
 }
