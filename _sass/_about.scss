@@ -7,50 +7,49 @@ main.about {
       padding: 0;
       gap: 0 1rem;
       margin-bottom: 5rem;
-    }
-    .left {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      height: auto;
-      width: 40%;
-      padding-bottom: 2rem;
-      h2{
-        margin: 0;
-      }
-    }
-    .title {
-      position: sticky;
-      top: 2rem;
-      // display: flex;
-      // flex-wrap: wrap;
-    }
-    .right {
-      display: flex;
-      flex-wrap: wrap;
-      width: 60%;
-      > dl{
-        margin: 0;
-        &:not(:first-child) {
-          margin-top: 3rem;
+      .career-company-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        width: 40%;
+        padding-bottom: 2rem;
+        .wrapper {
+          position: sticky;
+          top: 2rem;
+          h3, h4, p {
+            margin: 0 0 .5rem;
+          }
         }
-        > dt { margin: 0; }
-        > dd { 
+        
+      }
+      .career-task-detail {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        > dl{
           margin: 0;
-          dl {
-            * {
-              display: list-item;
-              list-style: circle;
-            }
-            dt {
-              font-weight: normal;
-              margin-bottom: 1rem;
+          &:not(:first-child) {
+            margin-top: 3rem;
+          }
+          > dt { margin: 0; }
+          > dd { 
+            margin: 0;
+            dl {
+              * {
+                display: list-item;
+                list-style: circle;
+              }
+              dt {
+                font-weight: normal;
+                margin-bottom: 1rem;
+              }
             }
           }
         }
-      }
-      h3 {
-        margin: 0;
+        h3 {
+          margin: 0;
+        }
       }
     }
   }
