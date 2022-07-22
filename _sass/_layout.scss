@@ -27,6 +27,16 @@
           a {
             text-decoration: none;
             color: white;
+            &[title="Resume"] {
+              padding: .5rem 1rem;
+              border-radius: .5rem;
+              background-color: #333;
+              color: #fff;
+              transition: background-color .2s ease-out;
+              &:hover {
+                background-color: #666;
+              }
+            }
           }
         }
       }
