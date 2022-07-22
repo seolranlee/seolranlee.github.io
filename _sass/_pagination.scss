@@ -28,7 +28,7 @@ a.pagination-item:hover {
   background-color: var(--border-color);
 }
 
-@media (min-width: 30em) {
+@media (min-width: 768px) {
   .pagination {
     margin: var(--spacer-3) 0;
   }
