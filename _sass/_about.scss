@@ -3,30 +3,17 @@ main.about {
   }
   section.career {
     .career-history {
-      display: flex;
       padding: 0;
-      gap: 0 1rem;
       margin-bottom: 5rem;
       .career-company-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        height: auto;
-        width: 40%;
         padding-bottom: 2rem;
         .wrapper {
-          position: sticky;
-          top: 2rem;
           h3, h4, p {
             margin: 0 0 .5rem;
           }
         }
-        
       }
       .career-task-detail {
-        display: flex;
-        flex-wrap: wrap;
-        width: 60%;
         > dl{
           margin: 0;
           &:not(:first-child) {
@@ -70,6 +57,30 @@ main.about {
     }
     dl:not(:first-child) {
       margin-top: 2rem;
+    }
+  }
+  @media (min-width: 30em) {
+    section.career {
+      .career-history {
+        display: flex;
+        gap: 0 1rem;
+        .career-company-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          height: auto;
+          width: 40%;
+          .wrapper {
+            position: sticky;
+            top: 2rem;
+          }
+        }
+        .career-task-detail {
+          display: flex;
+          flex-wrap: wrap;
+          width: 60%;
+        }
+      }
     }
   }
 }
