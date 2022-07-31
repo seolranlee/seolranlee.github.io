@@ -5,7 +5,7 @@ title: Reduced User-Agent string
 
 내가 현재 속해 있는 프론트엔드 챕터에서는 매주 한 명씩 돌아가면서 챕터원 모두와 함께 나눌만한 주제로 기술 세미나를 진행하고 있다. 마침 얼마 전 나의 차례가 되어서 Reduced User-Agent string라는 주제로 발표를 하였고 나의 개인 블로그에 해당 발표자료를 한 차례 더 정리하는 과정을 거쳐 공유해 보고자 한다.
 
-최근 크롬 100버전이 릴리즈 되면서 (작성일 기준 버전은 103.0.5060.114) 크롬 블로그에 아래와 같은 내용이 기제되었다.
+최근 크롬 100버전이 릴리즈 되면서 (작성일 기준 버전은 `103.0.5060.114`) 크롬 블로그에 아래와 같은 내용이 기제되었다.
 
 ## [Chrome100 - 축소되지 않은 UA 문자열을 지원하는 마지막 버전](https://developer.chrome.com/blog/new-in-chrome-100/?fbclid=IwAR1bnxqGSjwymXCsP_P9MeWL9c8KYaMV9u882kh3-c9A46D0JZ0xn4cpKVQ#reduced-ua)
 
