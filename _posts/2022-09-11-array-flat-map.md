@@ -78,7 +78,7 @@ get selectedProBucketIds() {
 
 ```jsx
 get selectedProBucketIds() {
-  return this.proBucketList.flatMap((item) => (item.selected ? [item.id] : []));
+    return this.proBucketList.flatMap((item) => (item.selected ? [item.id] : []));
 }
 ```
 *개이득*
@@ -93,8 +93,7 @@ a.flatMap((n) =>
 	// 요소의 값이 음수이면 제거
   (n < 0) ?      [] :
 	// 요소의 값이 양수이면서 짝수이면 그대로 return, 홀수이면 값에서 1을 빼주고 그 뒤에 1을 추가
-  (n % 2 == 0) ? [n] :
-                 [n-1, 1]
+  (n % 2 == 0) ? [n] : [n-1, 1]
 )
 
 // expected output: [4, 1, 4, 20, 16, 1, 18]
