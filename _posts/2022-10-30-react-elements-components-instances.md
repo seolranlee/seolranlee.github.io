@@ -180,28 +180,29 @@ const DeleteAccount = () => (
 
 ```jsx
 const DeleteAccount = () => (
-// React element
-	{
-	  type: 'div',
-	  props: {
-	    children: [{
-	      type: 'p',
-	      props: {
-	        children: 'Are you sure?'
-	      }
-	    }, {
-	      type: DangerButton,
-	      props: {
-	        children: 'Yep'
-	      }
-	    }, {
-	      type: Button,
-	      props: {
-	        color: 'blue',
-	        children: 'Cancel'
-	      }
-	   }]
-	}
+  // React element
+  {
+    type: 'div',
+    props: {
+      children: [{
+        type: 'p',
+        props: {
+          children: 'Are you sure?'
+        }
+      }, {
+        type: DangerButton,
+        props: {
+          children: 'Yep'
+        }
+      }, {
+        type: Button,
+        props: {
+          color: 'blue',
+          children: 'Cancel'
+        }
+      }]
+    }
+  }
 );
 
 ```
