@@ -28,7 +28,7 @@ setState는 리액트 내부적으로 비동기로 작동하고 이말인즉슨 
 
 그리하여 state의 변경은 effect로 관리하여야 한다. (저렇게 윗줄에 setState를 해줬다고 state가 바로 반영될 것이라고 대하고 냅다 api를 호출하는 것이 아니라..)
 
-트러블 슈팅이라고 말하기에도 민망한 이 에피소드는 리액트에 대한 나의 지식 수준을 돌아보게 하였는데 그리하여 최근에 추천 받은 [React의 동작 원리와 개념들이 담겨있는 플레이 리스트](https://www.youtube.com/watch?v=7YhdqIR2Yzo&list=PLxRVWC-K96b0ktvhd16l3xA6gncuGP7gJ)를 차근 차근 공부해보기로 마음을 먹게 되었다. 적지 않은 내용이고 다루는 내용들의 깊이나 수준도 얕은 편이 아니라 앞으로 여러 차례에 걸쳐서 해당 주제에 대해 게시를 할 생각이다.
+트러블 슈팅이라고 말하기에도 민망한 이 에피소드는 리액트에 대한 나의 지식 수준을 돌아보게 하였는데 그리하여 최근에 추천 받은 [React의 동작 원리와 개념들이 담겨있는 플레이 리스트](https://www.youtube.com/watch?v=7YhdqIR2Yzo&list=PLxRVWC-K96b0ktvhd16l3xA6gncuGP7gJ)를 차근 차근 공부해보기로 마음을 먹게 되었다. 적지 않은 내용이고 다루는 내용들의 깊이나 수준도 얕은 편이 아니라 앞으로 여러 차례에 걸쳐서 해당 주제에 대해 게시를 할 생각이다. (이 에피소드와 관련된 개념도 다루게 될 것이다.)
 
 # React elements vs React components vs Component instances
 
