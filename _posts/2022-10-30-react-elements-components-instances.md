@@ -98,13 +98,13 @@ React에서 JSX는
 
 ```jsx
 const App = () => {
-	return (
-      <button className='button button-blue'>
-        <b>
-          OK!
-        </b>
-      </button>
-    )
+  return (
+    <button className='button button-blue'>
+      <b>
+        OK!
+      </b>
+    </button>
+  )
 }
 
 const App = () => {
@@ -274,12 +274,12 @@ const Form = ({ isSubmitted, buttonText }) => {
 
   // Form is still visible! Return a button element.
   return {
-	  type: Button,
-	  props: {
-	    children: buttonText,
-	    color: 'blue'
-	  }
-	}
+    type: Button,
+    props: {
+      children: buttonText,
+      color: 'blue'
+    }
+  }
 };
 ```
 
