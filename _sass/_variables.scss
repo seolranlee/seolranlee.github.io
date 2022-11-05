@@ -32,8 +32,8 @@
   --body-color: var(--gray-700);
   --body-bg: #fff;
 
-  --link-color: var(--blue);
-  --link-hover-color: #1c7ed6;
+  --link-color: var(--gray-700);
+  --link-hover-color: var(--gray-900);
 
   --heading-color: var(--gray-900);
 
@@ -56,8 +56,8 @@
 
     --heading-color: #fff;
 
-    --link-color: var(--blue-300);
-    --link-hover-color: var(--blue-400);
+    --link-color: var(--gray-400);
+    --link-hover-color: white;
 
     --border-color: rgba(255,255,255,.15);
 

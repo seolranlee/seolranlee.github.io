@@ -1,5 +1,5 @@
 # Setup
-title: 이설란
+title: seolranlee
 tagline: 웹 프론트엔드 개발자
 url: https://seolranlee.github.io
 paginate: 1
@@ -34,7 +34,7 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Seolran Lee
+  name: seolranlee
   url: https://github.com/seolranlee
   email: leesugar90@gmail.com
 

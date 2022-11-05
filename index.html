@@ -1,33 +1,31 @@
 ---
 layout: default
-title: 이설란 - 웹 프론트엔드 개발자
+title: 블로그 | seolranlee
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {{ post.content }}
-  </article>
-  {% endfor %}
+<div class="profile">
+  <img
+    src="https://avatars.githubusercontent.com/u/23238421?v=4"
+    alt="seolranlee"
+  />
+  <p>
+    생활의 전문가와 소비자를 연결하는 O2O 플랫폼 <strong>숨고</strong>를
+    운영하는 <strong>브레이브 모바일</strong>의 프론트엔드 엔지니어로
+    재직중입니다. 사용자가 원하는 지점에 도달하기까지의 프로세스 전반을 개선하는
+    일에 관심이 많습니다.
+  </p>
 </div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<div class="archive">
+  {% assign postsByYearMonth = site.posts | group_by_exp: "post", "post.date |
+  date: '%B %Y'" %} {% for yearMonth in postsByYearMonth %}
+  <h2>{{ yearMonth.name }}</h2>
+  <ul>
+    {% for post in yearMonth.items %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span>{{ yearMonth.name | date_to_string }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
 </div>

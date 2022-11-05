@@ -13,35 +13,37 @@
       margin: 0;
       padding: 0;
     }
+    display: flex;
+    justify-content: space-between;
     .masthead-title {
       margin: 0;
     }
     .nav-list {
-      margin-top: 1rem;
       ul {
         display: flex;
-        justify-content: end;
+        // justify-content: end;
         gap: 0 1rem;
         li {
           list-style: none;
           a {
             text-decoration: none;
-            color: var(--body-color);
-            &[title="Resume"] {
-              padding: .5rem 1rem;
-              border-radius: .5rem;
-              background-color: #333;
-              color: #fff;
-              transition: background-color .2s ease-out;
-              &:hover {
-                background-color: #666;
-              }
-            }
+            // color: var(--body-color);
+            // &[title="Resume"] {
+            //   padding: .5rem 1rem;
+            //   border-radius: .5rem;
+            //   background-color: #333;
+            //   color: #fff;
+            //   transition: background-color .2s ease-out;
+            //   &:hover {
+            //     background-color: #666;
+            //   }
+            // }
           }
         }
       }
     }
   }
+
   @media (min-width: 768px) {
     header {
       display: flex;
@@ -63,4 +65,20 @@
 footer {
   margin-top: var(--spacer-3);
   margin-bottom: var(--spacer-3);
+  .contact{
+    margin-bottom: var(--spacer);
+    ul {
+      display: flex;
+      gap: 0 1rem;
+      li {
+        a {
+          svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: currentColor
+          }
+        }
+      }
+    }
+  }
 }

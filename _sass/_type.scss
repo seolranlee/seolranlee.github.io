@@ -49,7 +49,8 @@ dd {
 
 hr {
   position: relative;
-  margin: var(--spacer-2) 0;
+  margin: 0;
+  // margin: var(--spacer-2) 0;
   border: 0;
   border-top: 1px solid var(--border-color);
 }
