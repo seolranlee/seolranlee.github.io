@@ -68,9 +68,6 @@
         display: flex;
         gap: 0 1rem;
         .career-company-info {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
           height: auto;
           width: 40%;
           .wrapper {
@@ -79,8 +76,6 @@
           }
         }
         .career-task-detail {
-          display: flex;
-          flex-wrap: wrap;
           width: 60%;
         }
       }
