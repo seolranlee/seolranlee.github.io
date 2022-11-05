@@ -23,7 +23,7 @@ title: 블로그 | seolranlee
     {% for post in yearMonth.items %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      <span>{{ yearMonth.name | date_to_string }}</span>
+      <span>{{ post.date | date_to_string }}</span>
     </li>
     {% endfor %}
   </ul>
