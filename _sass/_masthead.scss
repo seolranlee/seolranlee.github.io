@@ -3,21 +3,26 @@
 // Super small header above the content for site name and short description.
 
 .masthead {
-  padding-top: var(--spacer);
-  // padding-bottom: var(--spacer);
+  padding-top: var(--spacer-3);
   padding-bottom: var(--spacer);
-}
-
-.masthead-title {
-  margin-bottom: 0;
-
-  a {
-    color: inherit;
-    text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  * {
+    margin: 0;
+    padding: 0;
   }
-
-  small {
-    font-weight: 400;
-    opacity: .5;
+  .masthead-title {
+    a {
+      color: var(--pink)
+    }
+  }
+  .nav-list {
+    ul {
+      display: flex;
+      gap: 0 1rem;
+      li {
+        list-style: none;
+      }
+    }
   }
 }

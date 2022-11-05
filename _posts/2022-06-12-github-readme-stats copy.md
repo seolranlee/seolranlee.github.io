@@ -1,6 +1,7 @@
 ---
 layout: post
 title: github readme 페이지에 유의미한 데이터 노출하기
+desc: github 프로필을 유의미한 정보로 채워봅시다.
 ---
 
 ## 필요하게 된 이유

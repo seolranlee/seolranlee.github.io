@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reduced User-Agent string
+desc: Chrome의 개인정보 보호를 위한 샌드박스 프로젝트 중 Client Hints에 대해 소개합니다.
 ---
 
 내가 현재 속해 있는 프론트엔드 챕터에서는 매주 한 명씩 돌아가면서 챕터원 모두와 함께 나눌만한 주제로 기술 세미나를 진행하고 있다. 마침 얼마 전 나의 차례가 되어서 Reduced User-Agent string라는 주제로 발표를 하였고 나의 개인 블로그에 해당 발표자료를 한 차례 더 정리하는 과정을 거쳐 공유해 보고자 한다.

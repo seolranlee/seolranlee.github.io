@@ -7,59 +7,14 @@
   padding-right: var(--spacer-2);
   margin-left:  auto;
   margin-right: auto;
-  header {
-    margin-top: 1rem;
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    display: flex;
-    justify-content: space-between;
-    .masthead-title {
-      margin: 0;
-    }
-    .nav-list {
-      ul {
-        display: flex;
-        // justify-content: end;
-        gap: 0 1rem;
-        li {
-          list-style: none;
-          a {
-            text-decoration: none;
-            // color: var(--body-color);
-            // &[title="Resume"] {
-            //   padding: .5rem 1rem;
-            //   border-radius: .5rem;
-            //   background-color: #333;
-            //   color: #fff;
-            //   transition: background-color .2s ease-out;
-            //   &:hover {
-            //     background-color: #666;
-            //   }
-            // }
-          }
-        }
-      }
-    }
-  }
-
-  @media (min-width: 768px) {
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      * {
-        margin: 0;
-      }
-      .masthead-title {
-        margin: 0;
-      }
-      .nav-list {
-        margin: 0;
-      }
-    }
-  }
+  // header {
+  //   margin-top: 1rem;
+  //   * {
+  //     margin: 0;
+  //     padding: 0;
+  //   }
+    
+  // }
 }
 
 footer {

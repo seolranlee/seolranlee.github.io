@@ -1,6 +1,7 @@
 ---
 layout: post
 title: github rest api를 이용해 배포 트리거하기
+desc: 사내 블로그 구축에 github rest api를 사용한 경험을 공유합니다.
 ---
 
 

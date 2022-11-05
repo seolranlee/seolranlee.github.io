@@ -1,6 +1,7 @@
 ---
 layout: post
 title: React elements vs React components vs Component instances
+desc: React element와 component에 대해 알아봅니다.
 ---
 
 프론트엔드 개발을 함에 있어서 리액트는 거의 필수적인 라이브러리로 자리잡은 듯 한다. (마치 자바스크립트도 잘 모르는 상태로 제이쿼리부터 배워서 웹 개발을 하던 때 처럼..?)
