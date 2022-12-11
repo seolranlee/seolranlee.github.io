@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React hooks는 실제로 어떻게 동작할까? - 1.왜 hooks는 호출순서에 의존할까?
-desc: React hooks의 규칙들 중 호출순서에 의존하는 이유를 파헤쳐봅니다.
+desc: React hook의 규칙 중 hook이 호출 순서에 의존하는 이유를 알아봅니다.
 ---
 
 해당 포스트는 [React.js Deep Dive 시리즈 중의 3편인 How Do React Hooks Actually Work?]([https://www.youtube.com/watch?t=334&v=7YhdqIR2Yzo&feature=youtu.be](https://youtu.be/1VVfMVQabx0))을 기반으로 작성하였습니다.
