@@ -262,9 +262,9 @@ const ReactX = (() => {
   // 종속성이 없으면 콜백이 항상 호출되고 종속성이 있으면 종속성이 변경된 경우에만 콜백이 호출된다.
   const useEffect = (callback, dependencyArray) => {
     // 그래서 내부에서 hasChanged라는 변수를 생성하고 기본값은 true로 둔다.
-    // 종속성이 있는 경우, hasChnaged를 계산한다.
-    // 이를 위해 우리는 이전 종속성에 접근할 수 있어야 한다.
-    // 배열을 사용해 상태를 저장하던 것과 동일한 방식으로 저장한다.
+    // 종속성이 있는 경우, hasChanged를 계산한다.
+    // 이러한 비교를 위해 우리는 이전 종속성에 접근할 수 있어야 한다.
+    // 배열을 사용해 상태를 저장하던 것과 동일한 방식으로 종속성을 저장한다.
     let hasChanged = true;
     if (hasChanged) {
       callback();
