@@ -250,7 +250,7 @@ Component(); // 2
 
  
 
-useState를 다루었으므로 useEffect의 구현도 다루어보도록 하자. useState에 이어 두번째로 중요한 hook이도 구현도 그리 어렵지 않기 때문이다.
+useState를 다루었으므로 useEffect의 구현도 다루어보도록 하자. useState에 이어 두번째로 중요한 hook이기도 하고, 구현도 그리 어렵지 않기 때문이다.
 
 ## useEffect구현
 
