@@ -22,7 +22,7 @@ desc: React hook의 규칙 중 hook이 호출 순서에 의존하는 이유를 �
 
 # 왜 hooks는 호출 순서에 의존할까
 
-React공식 문서에 의하면 hook은 항상 동일한 순서로 호출되는 것이 보장되어야 한다.
+React공식 문서에 의하면 hook은 항상 동일한 순서로 호출되는 것이 보장되어야한다.
 반복문이나 조건문 안에서 hooks를 호출할 수 없는 이유는 모두 이 때문이다. (반복문이나 조건문 안에서 hooks를 사용하면 동일한 호출 순서가 보장되지 않기 때문이다.)
 
 ## hooks는 배열과 관련되어 있다.
@@ -439,7 +439,7 @@ const Component = () => {
     setCounterValue(2);
   }
 
-  // counterValue조건을 추가하여 세번째 렌더링 때에 Jack으로 바뀌루 수 있도록 특정한다.
+  // counterValue조건을 추가하여 세번째 렌더링 때 Jack으로 바뀔 수 있도록 특정한다.
   if (name !== "Jack" && counterValue === 2) {
     setName("Jack");
   }
