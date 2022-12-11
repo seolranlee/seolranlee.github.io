@@ -4,7 +4,7 @@ title: React hooks는 실제로 어떻게 동작할까? - 1.왜 hooks는 호출�
 desc: React hook의 규칙 중 hook이 호출 순서에 의존하는 이유를 알아봅니다.
 ---
 
-해당 포스트는 [React.js Deep Dive 시리즈 중의 3편인 How Do React Hooks Actually Work?]([https://www.youtube.com/watch?t=334&v=7YhdqIR2Yzo&feature=youtu.be](https://youtu.be/1VVfMVQabx0))을 기반으로 작성하였습니다.
+해당 포스트는 [React.js Deep Dive 시리즈 중의 3편인 How Do React Hooks Actually Work?](https://youtu.be/1VVfMVQabx0)을 기반으로 작성하였습니다.
 
 리액트에서 hooks를 사용해 개발을 해보았다면 모두가 알고 있는 규칙이 있다.
 바로 최상위에서만 hook을 호출해야 한다는 것이다. (조건문 혹은 중첩된 함수 안에서 hook을 호출해서는 안된다.)  hook의 실행 순서가 언제나 동일하게 보장되어야 하기 때문이다.
